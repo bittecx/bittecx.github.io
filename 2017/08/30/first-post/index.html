@@ -303,6 +303,17 @@ Content
     font-size: 23px;
     line-height: 30px;
 }
+.has-pullquote::before {
+    content: attr(data-pullquote);
+    @include column(4,6); 
+    font-family: "futura-pt", sans-serif;
+    text-transform: uppercase;
+    text-align: right;
+    color: $bright-link;
+    margin: 0.5em 1em 0.5em -40%;
+    position: relative;
+    top: -0.3em;
+}
 </style>
 
 <p> asdasdasd </p>
@@ -315,6 +326,8 @@ Content
 </blockquote>
 <blockquote class="pullquote has-pullquote:before"><p>Right<br>Left-aligning pullquotes are good to alternate breaks in the text. They’re<br>{“ almost exactly like the default, “} right pullquotes, but a little different.</p>
 </blockquote>
+<p class="has-pullquote" data-pullquote="The possibility of writing a post in Markdown, saving it to Dropbox and having it automagically appear on my blog was too tempting to pass up.">For example, I use Compass and Sass in my design workflow. In order to make a minor CSS change, I had to write the Compass/Sass code locally, compile it on my machine, then go through three or four clicks on a web form to upload that code and check it out in place. This quickly became cumbersome.</p>
+
 
     </article>
     <!-- 前后页  -->
