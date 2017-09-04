@@ -303,17 +303,30 @@ Content
     font-size: 23px;
     line-height: 30px;
 }
-.has-pullquote:before {
-    content: attr(data-pullquote);
-    @include column(4,6); 
-    font-family: "futura-pt", sans-serif;
-    text-transform: uppercase;
-    text-align: right;
-    color: $bright-link;
-    margin: 0.5em 1em 0.5em -40%;
-    position: relative;
-    top: -0.3em;
+<!-- .has-pullquote:before { -->
+<!--     content: attr(data-pullquote); -->
+<!--     @include column(4,6);  -->
+<!--     font-family: "futura-pt", sans-serif; -->
+<!--     text-transform: uppercase; -->
+<!--     text-align: right; -->
+<!--     color: $bright-link; -->
+<!--     margin: 0.5em 1em 0.5em -40%; -->
+<!--     position: relative; -->
+<!--     top: -0.3em; -->
 }
+.has-pullquote:before {
+    padding: 0;
+    border: none;
+    content: attr(data-pullquote);
+    float: right;
+    width: 320px;
+    margin: 12px -140px 24px 36px;
+    position: relative;
+    top: 5px;
+    font-size: 23px;
+    line-height: 30px;
+}
+
 </style>
 
 <p> asdasdasd </p>
