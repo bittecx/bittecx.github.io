@@ -280,18 +280,33 @@ HTML-элементов -->
 p {
     text-align: justify;
     }
-p.right {
-    float: right;
-     width: 320px;
-     margin: 12px -140px 24px 36px;
-    position: relative;
-     top: 5px;
+P.cite { 
+    color: navy;
+    margin-left: 20px;
+    border-left: 1px solid navy;
+    padding-left: 15px;
+
+<!-- p.right { -->
+<!--     float: right; -->
+<!--      width: 320px; -->
+<!--      margin: 12px -140px 24px 36px; -->
+<!--     position: relative; -->
+<!--      top: 5px; -->
 
 
-     font-size: 23px;
-     line-height: 30px;
- }
- </style>
+<!--      font-size: 23px; -->
+<!--      line-height: 30px; -->
+<!--  } -->
+p.pullquote-left:before {
+    float: left;
+    margin: 12px 31px 24px -102px;
+    width: 251px;
+}
+</style>
+
+<p> asdasdasd </p>
+
+<p class="cite"> sdfsdfsdfds<br>asdasdasdasd<br>asdasdasdasdasd<br></p>
 
 <blockquote class="pullquote"><p>Surround your paragraph with the pull quote tags. Then when you come to<br>the text you want to pull, {“ surround it like this “} and that’s all there is to it.</p>
 </blockquote>
